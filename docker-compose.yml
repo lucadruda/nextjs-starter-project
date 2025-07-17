@@ -1,11 +1,8 @@
-version: '3.8'
+version: '3'
 services:
-  web:
-    image: lucadruda/nextjs-starter-project
+  app:
+    image: lucadruda475/nextjs-starter-project:latest
     ports:
       - "3000:3000"
-    volumes:
-      - .:/app
     environment:
-      NODE_ENV: development
-    command: next dev
+      NODE_ENV: production
